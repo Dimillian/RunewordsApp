@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9FA71A2C28C71801003DF7E4 /* RunewordsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA71A2B28C71801003DF7E4 /* RunewordsApp.swift */; };
+		9FA71A3028C71803003DF7E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FA71A2F28C71803003DF7E4 /* Assets.xcassets */; };
+		9FA71A3328C71803003DF7E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FA71A3228C71803003DF7E4 /* Preview Assets.xcassets */; };
+		9FA71A3C28C72546003DF7E4 /* RunesData in Frameworks */ = {isa = PBXBuildFile; productRef = 9FA71A3B28C72546003DF7E4 /* RunesData */; };
+		9FA71A3F28C73217003DF7E4 /* Stash in Frameworks */ = {isa = PBXBuildFile; productRef = 9FA71A3E28C73217003DF7E4 /* Stash */; };
+		9FA71A4128C732B8003DF7E4 /* RunewordsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA71A4028C732B8003DF7E4 /* RunewordsListView.swift */; };
+		9FA71A4428C73452003DF7E4 /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA71A4328C73452003DF7E4 /* AppTabView.swift */; };
+		9FA71A4628C73480003DF7E4 /* StashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA71A4528C73480003DF7E4 /* StashView.swift */; };
+		9FA71A4828C7348F003DF7E4 /* RunesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA71A4728C7348F003DF7E4 /* RunesView.swift */; };
+		9FA71A4E28C73AAD003DF7E4 /* RuneDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA71A4D28C73AAD003DF7E4 /* RuneDetailView.swift */; };
+		9FA71A5028C73C13003DF7E4 /* Routeur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA71A4F28C73C13003DF7E4 /* Routeur.swift */; };
+		9FA71A5628C73FAB003DF7E4 /* DesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = 9FA71A5528C73FAB003DF7E4 /* DesignSystem */; };
+		9FA71A5828C744C9003DF7E4 /* RunewordRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA71A5728C744C9003DF7E4 /* RunewordRowView.swift */; };
+		9FA71A5A28C746BF003DF7E4 /* RunewordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA71A5928C746BF003DF7E4 /* RunewordView.swift */; };
+		9FA71A5C28C7539E003DF7E4 /* RunesStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA71A5B28C7539E003DF7E4 /* RunesStackView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9FA71A2828C71801003DF7E4 /* RunewordsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunewordsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FA71A2B28C71801003DF7E4 /* RunewordsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunewordsApp.swift; sourceTree = "<group>"; };
+		9FA71A2F28C71803003DF7E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9FA71A3228C71803003DF7E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9FA71A3928C71E6E003DF7E4 /* RunesData */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = RunesData; path = Packages/RunesData; sourceTree = "<group>"; };
+		9FA71A3D28C7319A003DF7E4 /* Stash */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Stash; path = Packages/Stash; sourceTree = "<group>"; };
+		9FA71A4028C732B8003DF7E4 /* RunewordsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunewordsListView.swift; sourceTree = "<group>"; };
+		9FA71A4328C73452003DF7E4 /* AppTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabView.swift; sourceTree = "<group>"; };
+		9FA71A4528C73480003DF7E4 /* StashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashView.swift; sourceTree = "<group>"; };
+		9FA71A4728C7348F003DF7E4 /* RunesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunesView.swift; sourceTree = "<group>"; };
+		9FA71A4D28C73AAD003DF7E4 /* RuneDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuneDetailView.swift; sourceTree = "<group>"; };
+		9FA71A4F28C73C13003DF7E4 /* Routeur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routeur.swift; sourceTree = "<group>"; };
+		9FA71A5328C73D96003DF7E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9FA71A5428C73E09003DF7E4 /* DesignSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = DesignSystem; path = Packages/DesignSystem; sourceTree = "<group>"; };
+		9FA71A5728C744C9003DF7E4 /* RunewordRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunewordRowView.swift; sourceTree = "<group>"; };
+		9FA71A5928C746BF003DF7E4 /* RunewordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunewordView.swift; sourceTree = "<group>"; };
+		9FA71A5B28C7539E003DF7E4 /* RunesStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunesStackView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9FA71A2528C71801003DF7E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FA71A5628C73FAB003DF7E4 /* DesignSystem in Frameworks */,
+				9FA71A3F28C73217003DF7E4 /* Stash in Frameworks */,
+				9FA71A3C28C72546003DF7E4 /* RunesData in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9FA71A1F28C71801003DF7E4 = {
+			isa = PBXGroup;
+			children = (
+				9FA71A2A28C71801003DF7E4 /* RunewordsApp */,
+				9FA71A5428C73E09003DF7E4 /* DesignSystem */,
+				9FA71A3928C71E6E003DF7E4 /* RunesData */,
+				9FA71A3D28C7319A003DF7E4 /* Stash */,
+				9FA71A2928C71801003DF7E4 /* Products */,
+				9FA71A3A28C72546003DF7E4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9FA71A2928C71801003DF7E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FA71A2828C71801003DF7E4 /* RunewordsApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9FA71A2A28C71801003DF7E4 /* RunewordsApp */ = {
+			isa = PBXGroup;
+			children = (
+				9FA71A5328C73D96003DF7E4 /* Info.plist */,
+				9FA71A4A28C73540003DF7E4 /* App */,
+				9FA71A2F28C71803003DF7E4 /* Assets.xcassets */,
+				9FA71A3128C71803003DF7E4 /* Preview Content */,
+				9FA71A4C28C73549003DF7E4 /* Runes */,
+				9FA71A4B28C73545003DF7E4 /* Runewords */,
+				9FA71A4928C7353C003DF7E4 /* Stash */,
+			);
+			path = RunewordsApp;
+			sourceTree = "<group>";
+		};
+		9FA71A3128C71803003DF7E4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9FA71A3228C71803003DF7E4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9FA71A3A28C72546003DF7E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9FA71A4928C7353C003DF7E4 /* Stash */ = {
+			isa = PBXGroup;
+			children = (
+				9FA71A4528C73480003DF7E4 /* StashView.swift */,
+			);
+			path = Stash;
+			sourceTree = "<group>";
+		};
+		9FA71A4A28C73540003DF7E4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9FA71A2B28C71801003DF7E4 /* RunewordsApp.swift */,
+				9FA71A4328C73452003DF7E4 /* AppTabView.swift */,
+				9FA71A4F28C73C13003DF7E4 /* Routeur.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9FA71A4B28C73545003DF7E4 /* Runewords */ = {
+			isa = PBXGroup;
+			children = (
+				9FA71A4028C732B8003DF7E4 /* RunewordsListView.swift */,
+				9FA71A5728C744C9003DF7E4 /* RunewordRowView.swift */,
+				9FA71A5928C746BF003DF7E4 /* RunewordView.swift */,
+				9FA71A5B28C7539E003DF7E4 /* RunesStackView.swift */,
+			);
+			path = Runewords;
+			sourceTree = "<group>";
+		};
+		9FA71A4C28C73549003DF7E4 /* Runes */ = {
+			isa = PBXGroup;
+			children = (
+				9FA71A4728C7348F003DF7E4 /* RunesView.swift */,
+				9FA71A4D28C73AAD003DF7E4 /* RuneDetailView.swift */,
+			);
+			path = Runes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9FA71A2728C71801003DF7E4 /* RunewordsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FA71A3628C71803003DF7E4 /* Build configuration list for PBXNativeTarget "RunewordsApp" */;
+			buildPhases = (
+				9FA71A2428C71801003DF7E4 /* Sources */,
+				9FA71A2528C71801003DF7E4 /* Frameworks */,
+				9FA71A2628C71801003DF7E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RunewordsApp;
+			packageProductDependencies = (
+				9FA71A3B28C72546003DF7E4 /* RunesData */,
+				9FA71A3E28C73217003DF7E4 /* Stash */,
+				9FA71A5528C73FAB003DF7E4 /* DesignSystem */,
+			);
+			productName = RunewordsApp;
+			productReference = 9FA71A2828C71801003DF7E4 /* RunewordsApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9FA71A2028C71801003DF7E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					9FA71A2728C71801003DF7E4 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 9FA71A2328C71801003DF7E4 /* Build configuration list for PBXProject "RunewordsApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9FA71A1F28C71801003DF7E4;
+			productRefGroup = 9FA71A2928C71801003DF7E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9FA71A2728C71801003DF7E4 /* RunewordsApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9FA71A2628C71801003DF7E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FA71A3328C71803003DF7E4 /* Preview Assets.xcassets in Resources */,
+				9FA71A3028C71803003DF7E4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9FA71A2428C71801003DF7E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FA71A5028C73C13003DF7E4 /* Routeur.swift in Sources */,
+				9FA71A4628C73480003DF7E4 /* StashView.swift in Sources */,
+				9FA71A5A28C746BF003DF7E4 /* RunewordView.swift in Sources */,
+				9FA71A5828C744C9003DF7E4 /* RunewordRowView.swift in Sources */,
+				9FA71A4428C73452003DF7E4 /* AppTabView.swift in Sources */,
+				9FA71A2C28C71801003DF7E4 /* RunewordsApp.swift in Sources */,
+				9FA71A4828C7348F003DF7E4 /* RunesView.swift in Sources */,
+				9FA71A4E28C73AAD003DF7E4 /* RuneDetailView.swift in Sources */,
+				9FA71A5C28C7539E003DF7E4 /* RunesStackView.swift in Sources */,
+				9FA71A4128C732B8003DF7E4 /* RunewordsListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9FA71A3428C71803003DF7E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9FA71A3528C71803003DF7E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9FA71A3728C71803003DF7E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RunewordsApp/Preview Content\"";
+				DEVELOPMENT_TEAM = K5WN7B7AT2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RunewordsApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diablo2.RunewordsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9FA71A3828C71803003DF7E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RunewordsApp/Preview Content\"";
+				DEVELOPMENT_TEAM = K5WN7B7AT2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RunewordsApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diablo2.RunewordsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9FA71A2328C71801003DF7E4 /* Build configuration list for PBXProject "RunewordsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FA71A3428C71803003DF7E4 /* Debug */,
+				9FA71A3528C71803003DF7E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FA71A3628C71803003DF7E4 /* Build configuration list for PBXNativeTarget "RunewordsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FA71A3728C71803003DF7E4 /* Debug */,
+				9FA71A3828C71803003DF7E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9FA71A3B28C72546003DF7E4 /* RunesData */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RunesData;
+		};
+		9FA71A3E28C73217003DF7E4 /* Stash */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Stash;
+		};
+		9FA71A5528C73FAB003DF7E4 /* DesignSystem */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DesignSystem;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 9FA71A2028C71801003DF7E4 /* Project object */;
+}
