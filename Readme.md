@@ -11,7 +11,7 @@ The Stash feature is still under the making.
 
 This project have no external dependencies and make no network calls.
 
-You'll need Xcode 14 latest beta to comple it.
+You'll need Xcode 14 latest beta to compile it.
 
 ## Previews
 
