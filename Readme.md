@@ -15,6 +15,6 @@ You'll need Xcode 14 latest beta to comple it.
 
 ## Previews
 
-![Screenshot](Images/Images1.jpg)
-![Screenshot](Images/Images2.jpg)
-![Screenshot](Images/Images3.jpg)
+![Screenshot](Images/image1.jpg)
+![Screenshot](Images/image2.jpg)
+![Screenshot](Images/image3.jpg)
