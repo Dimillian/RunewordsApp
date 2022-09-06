@@ -19,7 +19,10 @@ public class RunesData: ObservableObject {
   }
   
   public func runewordsFor(runes: [String]) -> [Runeword] {
-    runewords.filter({ $0.runes.contains(runes) })
+    if runes.isEmpty {
+      return []
+    }
+    return runewords.filter({ $0.runes.isSuperset(of: runes) })
   }
   
   public func runewordsFor(itemsBase: [ItemBase]) -> [Runeword] {

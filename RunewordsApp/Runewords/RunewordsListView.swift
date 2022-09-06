@@ -30,6 +30,7 @@ struct RunewordsListView: View {
     .navigationTitle("Runewords")
     .searchable(text: $searchText,
                 tokens: $itemBaseFilter,
+                placement: .navigationBarDrawer(displayMode: .always),
                 prompt: "Search & Filter Runewords",
                 token: { token in
       Text(token.name)

@@ -34,7 +34,9 @@ struct RuneDetailView: View {
 
       Section {
         ForEach(data.runewordsFor(runes: [rune.name])) { runeword in
-          RunewordRowView(runeword: runeword)
+          NavigationLink(value: runeword) {
+            RunewordRowView(runeword: runeword)
+          }
         }
       } header: {
         Text("Runewords")

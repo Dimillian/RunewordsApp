@@ -10,7 +10,7 @@ struct RunewordView: View {
       Section {
         LabeledContent("Level", value: String(runeword.level))
         LabeledContent {
-          RunesStackView(runes: runeword.runes)
+          RunesStackView(runes: Array(runeword.runes))
         } label: {
           Text("Runes")
         }

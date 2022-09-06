@@ -13,6 +13,8 @@ This project have no external dependencies and make no network calls.
 
 You'll need Xcode 14 latest beta to compile it.
 
+I've wrote an [article](https://dimillian.medium.com/introducing-runewordsapp-5dfd146a6963) that describe the project a bit better than this readme.
+
 ## Previews
 
 ![Screenshot](Images/image1.png?)

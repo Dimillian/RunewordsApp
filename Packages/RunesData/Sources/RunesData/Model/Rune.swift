@@ -1,6 +1,6 @@
 import Foundation
 
-public struct Rune: Decodable, Identifiable, Hashable {
+public struct Rune: Decodable, Identifiable, Hashable, Equatable {
   public var id: String { name }
   public let name: String
   public let tier: Int

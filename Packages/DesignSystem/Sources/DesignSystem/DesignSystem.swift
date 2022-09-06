@@ -14,6 +14,7 @@ public struct DesignSystem {
     UINavigationBar.appearance().largeTitleTextAttributes = [.font : UIFont.AVQestFont(size: 32)]
     UINavigationBar.appearance().titleTextAttributes = [.font : UIFont.AVQestFont(size: 20)]
     UITabBarItem.appearance().setTitleTextAttributes([.font:  UIFont.AVQestFont(size: 14)], for: .normal)
+    UIBarButtonItem.appearance().setTitleTextAttributes([.font:  UIFont.AVQestFont(size: 17)], for: .normal)
   }
   
   fileprivate static func registerFont(bundle: Bundle, fontName: String, fontExtension: String) {
