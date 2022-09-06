@@ -15,10 +15,20 @@ struct RuneDetailView: View {
         } label: {
           Text("Rune")
         }
-        LabeledContent("Level", value: "TBD")
-        LabeledContent("Effect", value: "TBD")
+        LabeledContent("Weapon", value: rune.weapon)
+        LabeledContent("Armor", value: rune.armor)
+        LabeledContent("Shield", value: rune.shield)
       } header: {
         Text("Information")
+      }
+      .font(.AVQestFont(textStyle: .body))
+      
+      Section {
+        LabeledContent("Countess extra drop?", value: rune.countess)
+        LabeledContent("Hellforge drop?", value: rune.hellforge)
+        LabeledContent("Treasure class", value: rune.treasure)
+      } header: {
+        Text("Drop")
       }
       .font(.AVQestFont(textStyle: .body))
 

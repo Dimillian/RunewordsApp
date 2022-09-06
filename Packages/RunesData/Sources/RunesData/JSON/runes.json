@@ -1,100 +1,330 @@
 [{
   "name": "El",
-  "tier": 1
+  "tier": 1,
+  "weapon": "+50 attack rating, +1 light",
+  "armor": "+15 defense, +1 light",
+  "shield": "+15 defense, +1 light",
+  "countess": "normal and above",
+  "hellforge": "normal",
+  "treasure": "Act 2 Good and above",
+  "cube": "Eld"
 }, {
   "name": "Eld",
-  "tier": 1
+  "tier": 1,
+  "weapon": "+75% damage to undead, +50 attack rating vs. undead",
+  "armor": "15% slower stamina drain",
+  "shield": "+7% block chance",
+  "countess": "normal and above",
+  "hellforge": "normal",
+  "treasure": "Act 2 Good and above",
+  "cube": "Tir"
 }, {
   "name": "Tir",
-  "tier": 1
+  "tier": 1,
+  "weapon": "+2 mana per kill",
+  "armor": "+2 mana per kill",
+  "shield": "+2 mana per kill",
+  "countess": "normal and above",
+  "hellforge": "normal",
+  "treasure": "Act 2 Good and above",
+  "cube": "Nef"
 }, {
   "name": "Nef",
-  "tier": 1
+  "tier": 1,
+  "weapon": "knockback",
+  "armor": "+30 defense vs. missiles",
+  "shield": "+30 defense vs. missiles",
+  "countess": "normal and above",
+  "hellforge": "normal",
+  "treasure": "Act 2 Good and above",
+  "cube": "Eth"
 }, {
   "name": "Eth",
-  "tier": 1
+  "tier": 1,
+  "weapon": "−25% target defense",
+  "armor": "+15% mana regeneration",
+  "shield": "+15% mana regeneration",
+  "countess": "normal and above",
+  "hellforge": "normal",
+  "treasure": "Act 3 Good and above",
+  "cube": "Ith"
 }, {
   "name": "Ith",
-  "tier": 1
+  "tier": 1,
+  "weapon": "+9 maximum damage",
+  "armor": "15% damage to mana",
+  "shield": "15% damage to mana",
+  "countess": "normal and above",
+  "hellforge": "normal",
+  "treasure": "Act 3 Good and above",
+  "cube": "Tal"
 }, {
   "name": "Tal",
-  "tier": 1
+  "tier": 1,
+  "weapon": "+75 poison damage over 5s",
+  "armor": "30% poison resist",
+  "shield": "30% poison resist",
+  "countess": "normal and above",
+  "hellforge": "normal",
+  "treasure": "Act 3 Good and above",
+  "cube": "Ral"
 }, {
   "name": "Ral",
-  "tier": 1
+  "tier": 1,
+  "weapon": "+5–30 fire damage",
+  "armor": "30% fire resist",
+  "shield": "30% fire resistt",
+  "countess": "normal and above",
+  "hellforge": "normal",
+  "treasure": "Act 3 Good and above",
+  "cube": "Ort"
 }, {
   "name": "Ort",
-  "tier": 1
+  "tier": 1,
+  "weapon": "+1–50 lightning damage",
+  "armor": "30% lightning resist",
+  "shield": "30% lightning resist",
+  "countess": "nightmare and above",
+  "hellforge": "normal",
+  "treasure": "Act 4 Good and above",
+  "cube": "Thul"
 }, {
   "name": "Thul",
-  "tier": 1
+  "tier": 1,
+  "weapon": "+3–14 cold damage, 3s chill",
+  "armor": "30% cold resist",
+  "shield": "30% cold resist",
+  "countess": "nightmare and above",
+  "hellforge": "normal",
+  "treasure": "Act 4 Good and above",
+  "cube": "Amn"
 }, {
   "name": "Amn",
-  "tier": 1
+  "tier": 1,
+  "weapon": "7% life leech",
+  "armor": "14 damage returned",
+  "shield": "14 damage returned",
+  "countess": "nightmare and above",
+  "hellforge": "normal",
+  "treasure": "Act 4 Good and above",
+  "cube": "Sol"
 }, {
   "name": "Sol",
-  "tier": 2
+  "tier": 2,
+  "weapon": "+9 minimum damage",
+  "armor": "damage reduced by 7",
+  "shield": "damage reduced by 7",
+  "countess": "nightmare and above",
+  "hellforge": "nightmare",
+  "treasure": "Act 4 Good and above",
+  "cube": "Shael"
 }, {
   "name": "Shael",
-  "tier": 2
+  "tier": 2,
+  "weapon": "20% increased attack speed",
+  "armor": "20% faster hit recovery",
+  "shield": "20% faster block rate",
+  "countess": "nightmare and above",
+  "hellforge": "nightmare",
+  "treasure": "Act 5 Good and above",
+  "cube": "Dol"
 }, {
   "name": "Dol",
-  "tier": 2
+  "tier": 2,
+  "weapon": "hit causes flee +25%",
+  "armor": "replenish life +7",
+  "shield": "replenish life +7",
+  "countess": "nightmare and above",
+  "hellforge": "nightmare",
+  "treasure": "Act 5 Good and above",
+  "cube": "Hel"
 }, {
   "name": "Hel",
-  "tier": 2
+  "tier": 2,
+  "weapon": "requirements −20%",
+  "armor": "requirements −15%",
+  "shield": "requirements −15%",
+  "countess": "nightmare and above",
+  "hellforge": "nightmare and hell",
+  "treasure": "Act 1 (N) Good and above",
+  "cube": "Io"
 }, {
   "name": "Io",
-  "tier": 2
+  "tier": 2,
+  "weapon": "+10 vitality",
+  "armor": "+10 vitality",
+  "shield": "+10 vitality",
+  "countess": "nightmare and above",
+  "hellforge": "nightmare and hell",
+  "treasure": "Act 1 (N) Good and above",
+  "cube": "Lum"
 }, {
   "name": "Lum",
-  "tier": 2
+  "tier": 2,
+  "weapon": "+10 energy",
+  "armor": "+10 energy",
+  "shield": "+10 energy",
+  "countess": "hell",
+  "hellforge": "nightmare and hell",
+  "treasure": "Act 2 (N) Good and above",
+  "cube": "Ko"
 }, {
   "name": "Ko",
-  "tier": 2
+  "tier": 2,
+  "weapon": "+10 dexterity",
+  "armor": "+10 dexterity",
+  "shield": "+10 dexterity",
+  "countess": "hell",
+  "hellforge": "nightmare and hell",
+  "treasure": "Act 2 (N) Good and above",
+  "cube": "Fal"
 }, {
   "name": "Fal",
-  "tier": 2
+  "tier": 2,
+  "weapon": "+10 strength",
+  "armor": "+10 strength",
+  "shield": "+10 strength",
+  "countess": "hell",
+  "hellforge": "nightmare and hell",
+  "treasure": "Act 3 (N) Good and above",
+  "cube": "Lem"
 }, {
   "name": "Lem",
-  "tier": 2
+  "tier": 2,
+  "weapon": "75% extra gold",
+  "armor": "75% extra gold",
+  "shield": "75% extra gold",
+  "countess": "hell",
+  "hellforge": "nightmare and hell",
+  "treasure": "Act 3 (N) Good and above",
+  "cube": "Pul"
 }, {
   "name": "Pul",
-  "tier": 2
+  "tier": 2,
+  "weapon": "+75% damage to demons, +100 attack rating vs. demons",
+  "armor": "+30% defense",
+  "shield": "+30% defense",
+  "countess": "hell",
+  "hellforge": "nightmare and hell",
+  "treasure": "Act 4 (N) Good and above",
+  "cube": "Um"
 }, {
   "name": "Um",
-  "tier": 2
+  "tier": 2,
+  "weapon": "25% open wounds",
+  "armor": "15% all resists",
+  "shield": "15% all resists",
+  "countess": "hell",
+  "hellforge": "nightmare and hell",
+  "treasure": "Act 4 (N) Good and above",
+  "cube": "Mal"
 }, {
   "name": "Mal",
-  "tier": 3
+  "tier": 3,
+  "weapon": "prevent monster heal",
+  "armor": "magic damage reduced by 7",
+  "shield": "magic damage reduced by 7",
+  "countess": "hell",
+  "hellforge": "hell",
+  "treasure": "Act 5 (N) Good and above",
+  "cube": "Ist"
 }, {
   "name": "Ist",
-  "tier": 3
+  "tier": 3,
+  "weapon": "30% magic find",
+  "armor": "25% magic find",
+  "shield": "25% magic find",
+  "countess": "hell",
+  "hellforge": "hell",
+  "treasure": "Act 5 (N) Good and above",
+  "cube": "Gul"
 }, {
   "name": "Gul",
-  "tier": 3
+  "tier": 3,
+  "weapon": "+20% AR",
+  "armor": "5% maximum poison resist",
+  "shield": "5% maximum poison resist",
+  "countess": "no",
+  "hellforge": "hell",
+  "treasure": "Act 1 (H) Good and above",
+  "cube": "Vex"
 }, {
   "name": "Vex",
-  "tier": 3
+  "tier": 3,
+  "weapon": "7% mana leech",
+  "armor": "5% maximum fire resist",
+  "shield": "5% maximum fire resist",
+  "countess": "no",
+  "hellforge": "no",
+  "treasure": "Act 1 (H) Good and above",
+  "cube": "Ohm"
 }, {
   "name": "Ohm",
-  "tier": 3
+  "tier": 3,
+  "weapon": "+50% enhanced damage",
+  "armor": "5% maximum cold resist",
+  "shield": "5% maximum cold resist",
+  "countess": "no",
+  "hellforge": "no",
+  "treasure": "Act 2 (H) Good and above",
+  "cube": "Lo"
 }, {
   "name": "Lo",
-  "tier": 3
+  "tier": 3,
+  "weapon": "20% deadly strike",
+  "armor": "5% maximum lightning resist",
+  "shield": "5% maximum lightning resist",
+  "countess": "no",
+  "hellforge": "no",
+  "treasure": "Act 2 (H) Good and above",
+  "cube": "Sur"
 }, {
   "name": "Sur",
-  "tier": 3
+  "tier": 3,
+  "weapon": "hit blinds target",
+  "armor": "+5% mana",
+  "shield": "+50 mana",
+  "countess": "no",
+  "hellforge": "no",
+  "treasure": "Act 3 (H) Good and above",
+  "cube": "Ber"
 }, {
   "name": "Ber",
-  "tier": 3
+  "tier": 3,
+  "weapon": "20% crushing blow",
+  "armor": "8% physical resist",
+  "shield": "8% physical resist",
+  "countess": "no",
+  "hellforge": "no",
+  "treasure": "Act 3 (H) Good and above",
+  "cube": "Jah"
 }, {
   "name": "Jah",
-  "tier": 3
+  "tier": 3,
+  "weapon": "ignore target defense",
+  "armor": "+5% life",
+  "shield": "+5% life",
+  "countess": "no",
+  "hellforge": "no",
+  "treasure": "Act 4 (H) Good and above",
+  "cube": "Cham"
 }, {
   "name": "Cham",
-  "tier": 3
+  "tier": 3,
+  "weapon": "freeze target +3",
+  "armor": "cannot be frozen",
+  "shield": "cannot be frozen",
+  "countess": "no",
+  "hellforge": "no",
+  "treasure": "Act 4 (H) Good and above",
+  "cube": "Zod"
 }, {
   "name": "Zod",
-  "tier": 3
+  "tier": 3,
+  "weapon": "indestructible",
+  "armor": "indestructible",
+  "shield": "indestructible",
+  "countess": "no",
+  "hellforge": "no",
+  "treasure": "Act 5 (H) Good and above"
 }]

@@ -29,7 +29,6 @@ struct AppTabView: View {
         Label("Stash", systemImage: "folder")
       }
     }
-    .accentColor(.itemsColor(color: .runic))
   }
 }
 
