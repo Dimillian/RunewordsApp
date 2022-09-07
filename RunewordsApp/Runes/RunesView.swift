@@ -1,9 +1,11 @@
 import SwiftUI
 import RunesData
 import DesignSystem
+import Stash
 
 struct RunesView: View {
   @EnvironmentObject private var data: RunesData
+  @EnvironmentObject private var stash: Stash
   
   @State private var isInCraftMode = false
   @State private var selectedRune: [Rune] = []
@@ -50,7 +52,7 @@ struct RunesView: View {
           .foregroundColor(Color.itemsColor(color: .set))
           .offset(x: -16)
       }
-      makeRuneRowContent(rune: rune)
+      RuneRowView(rune: rune)
         .overlay(
           RoundedRectangle(cornerRadius: 16)
             .stroke(Color.itemsColor(color: isSelected ? .set : .runic), lineWidth: 2)
@@ -70,7 +72,7 @@ struct RunesView: View {
   
   private func makeStandardModeRow(rune: Rune) -> some View {
     NavigationLink(value: rune) {
-      makeRuneRowContent(rune: rune)
+      RuneRowView(rune: rune)
     }
     .contextMenu {
       Button {
@@ -83,22 +85,17 @@ struct RunesView: View {
       }
       
       Button {
-        // TODO: Add to stash
+        stash.toggleRune(rune: rune)
       } label: {
-        Text("Add to my stash")
+        if stash.isInStash(rune: rune) {
+          Text("Remove from my stash")
+        } else {
+          Text("Add to my stash")
+        }
       }
     }
   }
-  
-  private func makeRuneRowContent(rune: Rune) -> some View {
-    VStack {
-      Image(rune.name.lowercased())
-      Text(rune.name)
-        .font(.AVQestFont(textStyle: .headline))
-        .foregroundColor(.white)
-    }
-  }
-  
+    
   private var runewordsAvailableView: some View {
     Button {
       isRunewordsSheetPresented = true

@@ -1,8 +1,11 @@
 import SwiftUI
 import RunesData
 import DesignSystem
+import Stash
 
 struct RunewordRowView: View {
+  @EnvironmentObject private var stash: Stash
+  
   enum DisplayMode {
     case compact, large
   }
@@ -22,6 +25,17 @@ struct RunewordRowView: View {
       if displayMode == .large {
         largeModeView
           .font(.AVQestFont(textStyle: .body))
+      }
+    }
+    .contextMenu {
+      Button {
+        stash.toggleFavorite(runeword: runeword)
+      } label: {
+        if stash.isFavorite(runeword: runeword) {
+          Text("Remove form favorite")
+        } else {
+          Text("Add to favorite")
+        }
       }
     }
   }

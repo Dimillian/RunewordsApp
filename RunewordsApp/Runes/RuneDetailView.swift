@@ -1,9 +1,11 @@
 import SwiftUI
 import RunesData
 import DesignSystem
+import Stash
 
 struct RuneDetailView: View {
   @EnvironmentObject private var data: RunesData
+  @EnvironmentObject private var stash: Stash
   
   public let rune: Rune
 
@@ -42,7 +44,14 @@ struct RuneDetailView: View {
         Text("Runewords")
       }
       .font(.AVQestFont(textStyle: .body))
-      
-    }.navigationTitle(rune.name)
+    }
+    .navigationTitle(rune.name)
+    .toolbar {
+      Button {
+        stash.toggleRune(rune: rune)
+      } label: {
+        Image(systemName: stash.isInStash(rune: rune) ? "folder.fill" : "folder")
+      }
+    }
   }
 }

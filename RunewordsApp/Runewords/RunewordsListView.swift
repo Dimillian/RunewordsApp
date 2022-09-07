@@ -1,5 +1,6 @@
 import SwiftUI
 import RunesData
+import Stash
 
 struct RunewordsListView: View {
   @EnvironmentObject private var data: RunesData
@@ -46,7 +47,7 @@ struct RunewordsListView: View {
     Menu {
       ForEach(data.itemBase) { itemBase in
         Button {
-          if !itemBaseFilter.contains(where: { $0.name == itemBase.name }) {
+          if !itemBaseFilter.contains(where: { $0.id == itemBase.id }) {
             itemBaseFilter.append(itemBase)
           }
         } label: {

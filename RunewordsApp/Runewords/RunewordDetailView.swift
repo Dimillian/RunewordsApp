@@ -1,8 +1,11 @@
 import SwiftUI
 import RunesData
 import DesignSystem
+import Stash
 
-struct RunewordView: View {
+struct RunewordDetailView: View {
+  @EnvironmentObject private var stash: Stash
+  
   let runeword: Runeword
   
   var body: some View {
@@ -25,12 +28,24 @@ struct RunewordView: View {
         Text("Description")
       }
       .font(.AVQestFont(textStyle: .body))
-    }.navigationTitle(runeword.title)
+    }
+    .navigationTitle(runeword.title)
+    .toolbar {
+      ToolbarItem(placement: .navigationBarTrailing) {
+        Button {
+          stash.toggleFavorite(runeword: runeword)
+        } label: {
+          Image(systemName: stash.isFavorite(runeword: runeword) ? "star.fill" : "star")
+            .tint(.itemsColor(color: .runic))
+        }
+
+      }
+    }
   }
 }
 
 struct RunewordView_Previews: PreviewProvider {
   static var previews: some View {
-    RunewordView(runeword: RunesData().runewords.first!)
+    RunewordDetailView(runeword: RunesData().runewords.first!)
   }
 }
