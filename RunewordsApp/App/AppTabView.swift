@@ -28,6 +28,13 @@ struct AppTabView: View {
       .tabItem {
         Label("Stash", systemImage: "folder")
       }
+      
+      NavigationStack {
+        MoreView()
+          .withRouteur()
+      }.tabItem {
+        Label("More", systemImage: "ellipsis")
+      }
     }
   }
 }

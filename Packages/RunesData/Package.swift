@@ -21,6 +21,7 @@ let package = Package(
         .process("JSON/runes.json"),
         .process("JSON/runewords.json"),
         .process("JSON/runewords-description.json"),
+        .process("JSON/cube-recipes.json"),
       ]),
     .testTarget(
       name: "RunesDataTests",

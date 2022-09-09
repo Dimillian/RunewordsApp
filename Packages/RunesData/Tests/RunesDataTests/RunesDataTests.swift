@@ -12,12 +12,12 @@ final class RunesDataTests: XCTestCase {
   func testRunesWords() throws {
     XCTAssertEqual(data.runewords.count, 85)
     XCTAssertEqual(data.runewords.first?.title, "Ancient's Pledge")
-    XCTAssertEqual(data.runewords.first?.description?.utf8.count, 136)
+    XCTAssertEqual(data.runewords.first?.description?.utf8.count, 122)
   }
   
   func testRunewordsFilter() throws {
     XCTAssertEqual(data.runewordsFor(runes: ["Amn"]).count, 12)
-    XCTAssertEqual(data.runewordsFor(runes: ["Ber", "Jah"]).count, 1)
+    XCTAssertEqual(data.runewordsFor(runes: ["Ber", "Jah"]).count, 3)
   }
   
   func testItemBase() throws {
@@ -28,5 +28,9 @@ final class RunesDataTests: XCTestCase {
   func testItemBaseFilter() throws {
     XCTAssertEqual(data.runewordsFor(itemsBase: [.init(name: "Axes")]).count, 10)
     XCTAssertEqual(data.runewordsFor(itemsBase: [.init(name: "Axes")]).first!.title, "Steel")
+  }
+  
+  func testCubeRecipes() throws {
+    XCTAssertEqual(data.cubeRecipes.count, 155)
   }
 }

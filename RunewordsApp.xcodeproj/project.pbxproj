@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F2EB1E328C9E30000335548 /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2EB1E228C9E30000335548 /* MoreView.swift */; };
+		9F2EB1E528C9E4C200335548 /* CubeRecipesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2EB1E428C9E4C200335548 /* CubeRecipesListView.swift */; };
 		9F968F5C28C8794A0019D9F4 /* RuneRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F968F5B28C8794A0019D9F4 /* RuneRowView.swift */; };
 		9FA71A2C28C71801003DF7E4 /* RunewordsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA71A2B28C71801003DF7E4 /* RunewordsApp.swift */; };
 		9FA71A3028C71803003DF7E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FA71A2F28C71803003DF7E4 /* Assets.xcassets */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F2EB1E228C9E30000335548 /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
+		9F2EB1E428C9E4C200335548 /* CubeRecipesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeRecipesListView.swift; sourceTree = "<group>"; };
 		9F968F5B28C8794A0019D9F4 /* RuneRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuneRowView.swift; sourceTree = "<group>"; };
 		9FA71A2828C71801003DF7E4 /* RunewordsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunewordsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FA71A2B28C71801003DF7E4 /* RunewordsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunewordsApp.swift; sourceTree = "<group>"; };
@@ -60,6 +64,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F2EB1E128C9E2F300335548 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				9F2EB1E228C9E30000335548 /* MoreView.swift */,
+				9F2EB1E428C9E4C200335548 /* CubeRecipesListView.swift */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
 		9FA71A1F28C71801003DF7E4 = {
 			isa = PBXGroup;
 			children = (
@@ -83,9 +96,10 @@
 		9FA71A2A28C71801003DF7E4 /* RunewordsApp */ = {
 			isa = PBXGroup;
 			children = (
-				9FA71A5328C73D96003DF7E4 /* Info.plist */,
 				9FA71A4A28C73540003DF7E4 /* App */,
 				9FA71A2F28C71803003DF7E4 /* Assets.xcassets */,
+				9FA71A5328C73D96003DF7E4 /* Info.plist */,
+				9F2EB1E128C9E2F300335548 /* More */,
 				9FA71A3128C71803003DF7E4 /* Preview Content */,
 				9FA71A4C28C73549003DF7E4 /* Runes */,
 				9FA71A4B28C73545003DF7E4 /* Runewords */,
@@ -226,10 +240,12 @@
 				9F968F5C28C8794A0019D9F4 /* RuneRowView.swift in Sources */,
 				9FA71A5028C73C13003DF7E4 /* Routeur.swift in Sources */,
 				9FA71A4628C73480003DF7E4 /* StashView.swift in Sources */,
+				9F2EB1E528C9E4C200335548 /* CubeRecipesListView.swift in Sources */,
 				9FA71A5A28C746BF003DF7E4 /* RunewordDetailView.swift in Sources */,
 				9FA71A5828C744C9003DF7E4 /* RunewordRowView.swift in Sources */,
 				9FA71A4428C73452003DF7E4 /* AppTabView.swift in Sources */,
 				9FA71A2C28C71801003DF7E4 /* RunewordsApp.swift in Sources */,
+				9F2EB1E328C9E30000335548 /* MoreView.swift in Sources */,
 				9FA71A4828C7348F003DF7E4 /* RunesView.swift in Sources */,
 				9FA71A4E28C73AAD003DF7E4 /* RuneDetailView.swift in Sources */,
 				9FA71A5C28C7539E003DF7E4 /* RunesStackView.swift in Sources */,

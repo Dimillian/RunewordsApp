@@ -2,9 +2,10 @@ import Foundation
 import SwiftUI
 
 public class RunesData: ObservableObject {
-  public var runes: [Rune] = []
-  public var runewords: [Runeword] = []
-  public var itemBase: [ItemBase] = []
+  public private(set) var runes: [Rune] = []
+  public private(set) var runewords: [Runeword] = []
+  public private(set) var itemBase: [ItemBase] = []
+  public private(set) var cubeRecipes: [CubeRecipe] = []
   
   enum BundleError: Error {
     case fileNotFound
@@ -15,6 +16,7 @@ public class RunesData: ObservableObject {
     
     self.runes = loadRunes(decoder: decoder)
     self.runewords = loadRunewords(decoder: decoder)
+    self.cubeRecipes = loadCubeRecipes(decoder: decoder)
     self.itemBase = Array(Set(runewords.flatMap{ $0.types })).sorted().map{ .init(name: $0) }
   }
   
@@ -54,6 +56,17 @@ public class RunesData: ObservableObject {
         finaleRunewords.append(runeword)
       }
       return finaleRunewords
+    } catch {
+      return []
+    }
+  }
+  
+  private func loadCubeRecipes(decoder: JSONDecoder) -> [CubeRecipe] {
+    do {
+      let recipes = try decoder.decode([String: CubeRecipe].self,
+                                       from: try getJSONData(filename: "cube-recipes"))
+      let sortedRecipes = recipes.sorted(by: { $0.0 < $1.0 })
+      return sortedRecipes.compactMap{ $0.value }
     } catch {
       return []
     }

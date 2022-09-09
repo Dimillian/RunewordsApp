@@ -24,6 +24,7 @@ struct RunewordDetailView: View {
       
       Section {
         Text(runeword.description ?? "")
+          .foregroundColor(.itemsColor(color: .magic))
       } header: {
         Text("Description")
       }

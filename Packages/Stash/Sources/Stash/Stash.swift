@@ -2,6 +2,11 @@ import SwiftUI
 import RunesData
 
 public class Stash: ObservableObject {
+  struct StashData: Codable {
+    let runewords: [Runeword]
+    let runes: [Rune]
+  }
+  
   @Published public var favoriteRunewords: [Runeword] = [] {
     didSet {
       saveData()
@@ -20,11 +25,6 @@ public class Stash: ObservableObject {
   private var dataURL: URL {
     try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
       .appendingPathExtension("stashData")
-  }
-  
-  struct StashData: Codable {
-    let runewords: [Runeword]
-    let runes: [Rune]
   }
   
   public init() {
