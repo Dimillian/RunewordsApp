@@ -6,6 +6,8 @@ import Stash
 struct RunewordDetailView: View {
   @EnvironmentObject private var stash: Stash
   
+  @State private var runesAsImage = true
+  
   let runeword: Runeword
   
   var body: some View {
@@ -13,7 +15,10 @@ struct RunewordDetailView: View {
       Section {
         LabeledContent("Level", value: String(runeword.level))
         LabeledContent {
-          RunesStackView(runes: Array(runeword.runes))
+          RunesStackView(runes: Array(runeword.runes), asImage: $runesAsImage)
+            .onTapGesture {
+              runesAsImage.toggle()
+            }
         } label: {
           Text("Runes")
         }

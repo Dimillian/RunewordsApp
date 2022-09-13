@@ -21,7 +21,7 @@ struct RunewordRowView: View {
   var body: some View {
     VStack(alignment: .leading, spacing: 4) {
       runewordName
-      RunesStackView(runes: Array(runeword.runes))
+      RunesStackView(runes: Array(runeword.runes), asImage: .constant(true))
       if displayMode == .large {
         largeModeView
           .font(.AVQestFont(textStyle: .body))
