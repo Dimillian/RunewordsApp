@@ -24,7 +24,7 @@ public class Stash: ObservableObject {
   
   private var dataURL: URL {
     try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
-      .appendingPathExtension("stashData")
+      .appending(path: "stashData")
   }
   
   public init() {
@@ -63,7 +63,9 @@ public class Stash: ObservableObject {
       do {
         let data = try encoder.encode(stashData)
         try data.write(to: dataURL, options: .atomic)
-      } catch {}
+      } catch {
+        print(error)
+      }
     }
   }
   
