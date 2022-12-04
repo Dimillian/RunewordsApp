@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		9F2EB1E328C9E30000335548 /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2EB1E228C9E30000335548 /* MoreView.swift */; };
 		9F2EB1E528C9E4C200335548 /* CubeRecipesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2EB1E428C9E4C200335548 /* CubeRecipesListView.swift */; };
+		9F7B8CC128DC48E90004A2BF /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F7B8CC028DC48E90004A2BF /* WidgetKit.framework */; };
+		9F7B8CC328DC48E90004A2BF /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F7B8CC228DC48E90004A2BF /* SwiftUI.framework */; };
+		9F7B8CC628DC48E90004A2BF /* RunewordsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7B8CC528DC48E90004A2BF /* RunewordsWidget.swift */; };
+		9F7B8CC828DC48EB0004A2BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F7B8CC728DC48EB0004A2BF /* Assets.xcassets */; };
+		9F7B8CCC28DC48EB0004A2BF /* RunewordsWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9F7B8CBF28DC48E90004A2BF /* RunewordsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9F7B8CD228DC4E290004A2BF /* DesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = 9F7B8CD128DC4E290004A2BF /* DesignSystem */; };
+		9F7B8CD428DC4E290004A2BF /* RunesData in Frameworks */ = {isa = PBXBuildFile; productRef = 9F7B8CD328DC4E290004A2BF /* RunesData */; };
+		9F7B8CD628DC4E290004A2BF /* Stash in Frameworks */ = {isa = PBXBuildFile; productRef = 9F7B8CD528DC4E290004A2BF /* Stash */; };
 		9F968F5C28C8794A0019D9F4 /* RuneRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F968F5B28C8794A0019D9F4 /* RuneRowView.swift */; };
 		9FA71A2C28C71801003DF7E4 /* RunewordsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA71A2B28C71801003DF7E4 /* RunewordsApp.swift */; };
 		9FA71A3028C71803003DF7E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FA71A2F28C71803003DF7E4 /* Assets.xcassets */; };
@@ -27,9 +35,39 @@
 		9FA71A5C28C7539E003DF7E4 /* RunesStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA71A5B28C7539E003DF7E4 /* RunesStackView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9F7B8CCA28DC48EB0004A2BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FA71A2028C71801003DF7E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F7B8CBE28DC48E90004A2BF;
+			remoteInfo = RunewordsWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9F7B8CCD28DC48EB0004A2BF /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9F7B8CCC28DC48EB0004A2BF /* RunewordsWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		9F2EB1E228C9E30000335548 /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
 		9F2EB1E428C9E4C200335548 /* CubeRecipesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeRecipesListView.swift; sourceTree = "<group>"; };
+		9F7B8CBF28DC48E90004A2BF /* RunewordsWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RunewordsWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F7B8CC028DC48E90004A2BF /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		9F7B8CC228DC48E90004A2BF /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		9F7B8CC528DC48E90004A2BF /* RunewordsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunewordsWidget.swift; sourceTree = "<group>"; };
+		9F7B8CC728DC48EB0004A2BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F7B8CC928DC48EB0004A2BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F968F5B28C8794A0019D9F4 /* RuneRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuneRowView.swift; sourceTree = "<group>"; };
 		9FA71A2828C71801003DF7E4 /* RunewordsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunewordsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FA71A2B28C71801003DF7E4 /* RunewordsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunewordsApp.swift; sourceTree = "<group>"; };
@@ -51,6 +89,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9F7B8CBC28DC48E90004A2BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F7B8CD428DC4E290004A2BF /* RunesData in Frameworks */,
+				9F7B8CD228DC4E290004A2BF /* DesignSystem in Frameworks */,
+				9F7B8CC328DC48E90004A2BF /* SwiftUI.framework in Frameworks */,
+				9F7B8CC128DC48E90004A2BF /* WidgetKit.framework in Frameworks */,
+				9F7B8CD628DC4E290004A2BF /* Stash in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9FA71A2528C71801003DF7E4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -73,10 +123,21 @@
 			path = More;
 			sourceTree = "<group>";
 		};
+		9F7B8CC428DC48E90004A2BF /* RunewordsWidget */ = {
+			isa = PBXGroup;
+			children = (
+				9F7B8CC528DC48E90004A2BF /* RunewordsWidget.swift */,
+				9F7B8CC728DC48EB0004A2BF /* Assets.xcassets */,
+				9F7B8CC928DC48EB0004A2BF /* Info.plist */,
+			);
+			path = RunewordsWidget;
+			sourceTree = "<group>";
+		};
 		9FA71A1F28C71801003DF7E4 = {
 			isa = PBXGroup;
 			children = (
 				9FA71A2A28C71801003DF7E4 /* RunewordsApp */,
+				9F7B8CC428DC48E90004A2BF /* RunewordsWidget */,
 				9FA71A5428C73E09003DF7E4 /* DesignSystem */,
 				9FA71A3928C71E6E003DF7E4 /* RunesData */,
 				9FA71A3D28C7319A003DF7E4 /* Stash */,
@@ -89,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				9FA71A2828C71801003DF7E4 /* RunewordsApp.app */,
+				9F7B8CBF28DC48E90004A2BF /* RunewordsWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +181,8 @@
 		9FA71A3A28C72546003DF7E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9F7B8CC028DC48E90004A2BF /* WidgetKit.framework */,
+				9F7B8CC228DC48E90004A2BF /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -165,6 +229,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9F7B8CBE28DC48E90004A2BF /* RunewordsWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F7B8CD028DC48EB0004A2BF /* Build configuration list for PBXNativeTarget "RunewordsWidgetExtension" */;
+			buildPhases = (
+				9F7B8CBB28DC48E90004A2BF /* Sources */,
+				9F7B8CBC28DC48E90004A2BF /* Frameworks */,
+				9F7B8CBD28DC48E90004A2BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RunewordsWidgetExtension;
+			packageProductDependencies = (
+				9F7B8CD128DC4E290004A2BF /* DesignSystem */,
+				9F7B8CD328DC4E290004A2BF /* RunesData */,
+				9F7B8CD528DC4E290004A2BF /* Stash */,
+			);
+			productName = RunewordsWidgetExtension;
+			productReference = 9F7B8CBF28DC48E90004A2BF /* RunewordsWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		9FA71A2728C71801003DF7E4 /* RunewordsApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9FA71A3628C71803003DF7E4 /* Build configuration list for PBXNativeTarget "RunewordsApp" */;
@@ -172,10 +258,12 @@
 				9FA71A2428C71801003DF7E4 /* Sources */,
 				9FA71A2528C71801003DF7E4 /* Frameworks */,
 				9FA71A2628C71801003DF7E4 /* Resources */,
+				9F7B8CCD28DC48EB0004A2BF /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9F7B8CCB28DC48EB0004A2BF /* PBXTargetDependency */,
 			);
 			name = RunewordsApp;
 			packageProductDependencies = (
@@ -194,9 +282,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1400;
+				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					9F7B8CBE28DC48E90004A2BF = {
+						CreatedOnToolsVersion = 14.1;
+					};
 					9FA71A2728C71801003DF7E4 = {
 						CreatedOnToolsVersion = 14.0;
 					};
@@ -216,11 +307,20 @@
 			projectRoot = "";
 			targets = (
 				9FA71A2728C71801003DF7E4 /* RunewordsApp */,
+				9F7B8CBE28DC48E90004A2BF /* RunewordsWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9F7B8CBD28DC48E90004A2BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F7B8CC828DC48EB0004A2BF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9FA71A2628C71801003DF7E4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -233,6 +333,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9F7B8CBB28DC48E90004A2BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F7B8CC628DC48E90004A2BF /* RunewordsWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9FA71A2428C71801003DF7E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -255,7 +363,71 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		9F7B8CCB28DC48EB0004A2BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F7B8CBE28DC48E90004A2BF /* RunewordsWidgetExtension */;
+			targetProxy = 9F7B8CCA28DC48EB0004A2BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		9F7B8CCE28DC48EB0004A2BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z6P74P6T99;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RunewordsWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RunewordsWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diablo.runewordapp.RunewordsWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9F7B8CCF28DC48EB0004A2BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z6P74P6T99;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RunewordsWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RunewordsWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diablo.runewordapp.RunewordsWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		9FA71A3428C71803003DF7E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -373,6 +545,7 @@
 		9FA71A3728C71803003DF7E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -382,6 +555,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RunewordsApp/Info.plist;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -403,6 +577,7 @@
 		9FA71A3828C71803003DF7E4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -412,6 +587,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RunewordsApp/Info.plist;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -433,6 +609,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9F7B8CD028DC48EB0004A2BF /* Build configuration list for PBXNativeTarget "RunewordsWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F7B8CCE28DC48EB0004A2BF /* Debug */,
+				9F7B8CCF28DC48EB0004A2BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9FA71A2328C71801003DF7E4 /* Build configuration list for PBXProject "RunewordsApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -454,6 +639,18 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		9F7B8CD128DC4E290004A2BF /* DesignSystem */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DesignSystem;
+		};
+		9F7B8CD328DC4E290004A2BF /* RunesData */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RunesData;
+		};
+		9F7B8CD528DC4E290004A2BF /* Stash */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Stash;
+		};
 		9FA71A3B28C72546003DF7E4 /* RunesData */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = RunesData;

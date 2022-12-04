@@ -2,6 +2,7 @@ import SwiftUI
 import RunesData
 import DesignSystem
 import Stash
+import ActivityKit
 
 struct RunewordDetailView: View {
   @EnvironmentObject private var stash: Stash
@@ -9,6 +10,16 @@ struct RunewordDetailView: View {
   @State private var runesAsImage = true
   
   let runeword: Runeword
+  
+  init(runeword: Runeword) {
+    self.runeword = runeword
+    
+    if #available(iOS 16.1, *) {
+      Task {
+        RunewordActivityManager.shared.currentActivity = try? Activity<RunewordActivityAttributes>.request(attributes: .init(), contentState: .init(runeword: runeword))
+      }
+    }
+  }
   
   var body: some View {
     List {
@@ -45,6 +56,13 @@ struct RunewordDetailView: View {
             .tint(.itemsColor(color: .runic))
         }
 
+      }
+    }
+    .onDisappear {
+      if #available(iOS 16.1, *) {
+        Task {
+          await RunewordActivityManager.shared.currentActivity?.end()
+        }
       }
     }
   }
